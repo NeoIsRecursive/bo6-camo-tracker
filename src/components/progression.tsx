@@ -9,12 +9,16 @@ export const Progression = ({ weapon }: Props) => {
   const w = useWeapon(weapon);
 
   if (!w.state.hasBeenVisited) {
-    return <p>tbd</p>;
+    return <p className="text-neutral-500">tbd</p>;
   }
 
   const nextStep = w.state.challenges.find(
     (challenge) => challenge.completed === false
   );
 
-  return <p>next camo {nextStep?.camoName}</p>;
+  return (
+    <p className="text-neutral-500">
+      next camo <span className="text-white">{nextStep?.camoName}</span>
+    </p>
+  );
 };
