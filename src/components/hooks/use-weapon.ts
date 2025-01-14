@@ -26,6 +26,10 @@ type State = {
 
 type Actions =
   | {
+      type: "load";
+      state: State;
+    }
+  | {
       type: "markAsVisited";
     }
   | {
@@ -42,6 +46,9 @@ type Actions =
 
 const weaponReducer = (state: State, action: Actions): State => {
   switch (action.type) {
+    case "load": {
+      return action.state;
+    }
     case "markAsVisited":
       return {
         ...state,
@@ -126,6 +133,18 @@ const getInitialState = (weapon: Weapon): State => {
 
 export const useWeapon = (weapon: Weapon) => {
   const [state, dispatch] = useReducer(weaponReducer, getInitialState(weapon));
+
+  useEffect(() => {
+    const handler = () => {
+      dispatch({ type: "load", state: getInitialState(weapon) });
+    };
+
+    window.addEventListener("pageshow", handler);
+
+    return () => {
+      window.removeEventListener("pageshow", handler);
+    };
+  }, [weapon, dispatch]);
 
   useEffect(() => {
     window.localStorage.setItem(buildKey(weapon.name), JSON.stringify(state));
