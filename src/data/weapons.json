@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "ksv",
+    "type": "smg",
+    "challenges": [
+      {
+        "camoName": "idk",
+        "challenge": "get 300 kills with deadwire augment equipped"
+      },
+      {
+        "camoName": "idk 2",
+        "challenge": "get 300 kills while hipfiring"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "m16",
+    "type": "ar",
+    "challenges": [
+      {
+        "camoName": "wooo",
+        "challenge": "get 300 kills with deadwire augment equipped"
+      },
+      {
+        "camoName": "diwjd 2",
+        "challenge": "get 300 kills while hipfiring"
+      }
+    ]
+  }
+]

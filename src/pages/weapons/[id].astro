@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import { WeaponTasks } from "../../components/weapon-tasks";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const weapons = await getCollection("weapons");
+
+  return weapons.map((weapon) => ({
+    params: { id: weapon.id },
+    props: weapon,
+  }));
+}
+
+const { data } = Astro.props;
+---
+
+<Layout>
+  <h1 class="text-3xl font-black text-white">{data.name}</h1>
+
+  <p class="text-white mt-4 mb-6">
+    Here you can find all the camo challenges for the <strong
+      >{data.name}</strong
+    >
+    {data.type}.
+  </p>
+
+  <WeaponTasks weapon={data} client:only />
+</Layout>
