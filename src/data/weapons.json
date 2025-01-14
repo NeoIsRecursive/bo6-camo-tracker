@@ -1,31 +1,608 @@
 [
   {
     "id": 1,
-    "name": "ksv",
-    "type": "smg",
+    "name": "xm4",
+    "type": "AR",
     "challenges": [
       {
-        "camoName": "idk",
-        "challenge": "get 300 kills with deadwire augment equipped"
+        "camoName": "liquify",
+        "challenge": "Get 300 kills with Napalm Burst ammo installed."
       },
       {
-        "camoName": "idk 2",
-        "challenge": "get 300 kills while hipfiring"
+        "camoName": "mainframe",
+        "challenge": "Kill 30 Vermin."
       }
     ]
   },
   {
     "id": 2,
-    "name": "m16",
-    "type": "ar",
+    "name": "ames 85",
+    "type": "AR",
     "challenges": [
       {
-        "camoName": "wooo",
-        "challenge": "get 300 kills with deadwire augment equipped"
+        "camoName": "hyperion",
+        "challenge": "Get 300 kills with a Rare+ variant."
       },
       {
-        "camoName": "diwjd 2",
-        "challenge": "get 300 kills while hipfiring"
+        "camoName": "graveyard",
+        "challenge": "Get 300 kills with Brain Rot ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "ak-74",
+    "type": "AR",
+    "challenges": [
+      {
+        "camoName": "chlorine",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      },
+      {
+        "camoName": "haunted",
+        "challenge": "Get 300 kills with the weapon while it’s Pack-A-Punched."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "gpr 91",
+    "type": "AR",
+    "challenges": [
+      {
+        "camoName": "night stalker",
+        "challenge": "Get 300 kills with Cryo Freeze ammo installed."
+      },
+      {
+        "camoName": "frostblossom",
+        "challenge": "Kill 100 enemies affected by your tactical."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "model l",
+    "type": "AR",
+    "challenges": [
+      {
+        "camoName": "ghost blossom",
+        "challenge": "Kill 75 armored zombies."
+      },
+      {
+        "camoName": "walnut",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "goblin mk2",
+    "type": "AR",
+    "challenges": [
+      {
+        "camoName": "astral pride",
+        "challenge": "Kill 10 Manglers."
+      },
+      {
+        "camoName": "blood scent",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "as val",
+    "type": "AR",
+    "challenges": [
+      {
+        "camoName": "malachite steppes",
+        "challenge": "Kill 30 Parasites."
+      },
+      {
+        "camoName": "mountain goat",
+        "challenge": "Get 300 kills with Dead Wire ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "krig c",
+    "type": "AR",
+    "challenges": [
+      {
+        "camoName": "sunny splash",
+        "challenge": "Get 300 eliminations with Cryo Freeze equipped."
+      },
+      {
+        "camoName": "crowsbane",
+        "challenge": "Kill 100 enemies affected by your Tactical Equipment."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "c9",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "infrared",
+        "challenge": "Kill 30 Parasites."
+      },
+      {
+        "camoName": "lynx",
+        "challenge": "Get 300 kills while the weapon is Pack-A-Punched."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "ksv",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "phoenix",
+        "challenge": "Get 300 kills with Dead Wire ammo installed."
+      },
+      {
+        "camoName": "throttle",
+        "challenge": "Get 300 hipfire kills."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "tanto .22",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "solemn",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      },
+      {
+        "camoName": "aloha",
+        "challenge": "Get 300 kills while the weapon is Pack-A-Punched."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "pp-919",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "solvent",
+        "challenge": "Get 300 kills with Cryo Freeze ammo installed."
+      },
+      {
+        "camoName": "stalking shadow",
+        "challenge": "Get 10 kills without reloading 15 times."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "jackal pdw",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "plunge",
+        "challenge": "Get 300 kills with Napalm Burst ammo installed."
+      },
+      {
+        "camoName": "distress",
+        "challenge": "Get 300 hipfire kills."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "kompakt 92",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "tequila sunrise",
+        "challenge": "Get 300 kills with the Rare+ variant."
+      },
+      {
+        "camoName": "voidthorn",
+        "challenge": "Get 300 point blank kills."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "saug",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "whisper",
+        "challenge": "Get 300 eliminations with Dead Wire equipped."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "limewave",
+    "type": "SMG",
+    "challenges": [
+      {
+        "camoName": "limewave",
+        "challenge": "Get 300 Point Blank Kills."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "marine sp",
+    "type": "Shotgun",
+    "challenges": [
+      {
+        "camoName": "strawberry mint",
+        "challenge": "Get 300 kills with a Rare or above variant."
+      },
+      {
+        "camoName": "peel out",
+        "challenge": "Get 300 hipfire kills."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "asg-89",
+    "type": "Shotgun",
+    "challenges": [
+      {
+        "camoName": "dream eater",
+        "challenge": "Kill 100 enemies affected by your tactical."
+      },
+      {
+        "camoName": "coin-op",
+        "challenge": "Kill 30 Parasites."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "maelstrom",
+    "type": "Shotgun",
+    "challenges": [
+      {
+        "camoName": "cinder surge",
+        "challenge": "Get 10 kills without reloading 15 times."
+      },
+      {
+        "camoName": "lunar flutter",
+        "challenge": "Get 300 Hipfire Kills."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "pu-21",
+    "type": "LMG",
+    "challenges": [
+      {
+        "camoName": "vivid",
+        "challenge": "Kill 10 Manglers."
+      },
+      {
+        "camoName": "justice",
+        "challenge": "Get 300 hipfire kills."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "xmg",
+    "type": "LMG",
+    "challenges": [
+      {
+        "camoName": "hiss",
+        "challenge": "Get 10 kills without reloading 15 times."
+      },
+      {
+        "camoName": "acid slide",
+        "challenge": "Get 300 kills with Brain Rot ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "gpmg-7",
+    "type": "LMG",
+    "challenges": [
+      {
+        "camoName": "impressionist",
+        "challenge": "Get 300 point blank kills."
+      },
+      {
+        "camoName": "other world",
+        "challenge": "Get 10 kills without reloading 15 times."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "swat 5.56",
+    "type": "Marksman Rifle",
+    "challenges": [
+      {
+        "camoName": "hyperspace",
+        "challenge": "Kill 100 enemies affected by your Tactical."
+      },
+      {
+        "camoName": "wrangler",
+        "challenge": "Kill 75 armored zombies."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "tsarkov 7.62",
+    "type": "Marksman Rifle",
+    "challenges": [
+      {
+        "camoName": "harvest",
+        "challenge": "Kill 100 enemies affected by your Tactical."
+      },
+      {
+        "camoName": "desert sunset",
+        "challenge": "Kill 300 enemies with Dead Wire ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "aek-973",
+    "type": "Marksman Rifle",
+    "challenges": [
+      {
+        "camoName": "voidflame",
+        "challenge": "Get 300 kills with Cryo Freeze ammo installed."
+      },
+      {
+        "camoName": "blood moon",
+        "challenge": "Get 300 kills with Napalm Burst ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "dm-10",
+    "type": "Marksman Rifle",
+    "challenges": [
+      {
+        "camoName": "furybloom",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      },
+      {
+        "camoName": "manta",
+        "challenge": "Get 300 kills with Rare rarity or higher."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "lw3a1 frostline",
+    "type": "Sniper",
+    "challenges": [
+      {
+        "camoName": "strata",
+        "challenge": "Get 300 kills with a Rare rarity or higher."
+      },
+      {
+        "camoName": "eventide",
+        "challenge": "Kill 30 Parasites."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "svd",
+    "type": "Sniper",
+    "challenges": [
+      {
+        "camoName": "cartridge",
+        "challenge": "Kill 300 zombies."
+      },
+      {
+        "camoName": "integration",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "lr 7.62",
+    "type": "Sniper",
+    "challenges": [
+      {
+        "camoName": "foxglove",
+        "challenge": "Kill 10 Manglers."
+      },
+      {
+        "camoName": "overcast",
+        "challenge": "Get 300 kills with Brain Rot ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "amr mod 4",
+    "type": "Sniper",
+    "challenges": [
+      {
+        "camoName": "scarthorn",
+        "challenge": "Get 5 Critical Kills rapidly 15 times."
+      },
+      {
+        "camoName": "marine swirl",
+        "challenge": "Get 10 kills without reloading 15 times."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "9mm pm",
+    "type": "Pistol",
+    "challenges": [
+      {
+        "camoName": "yottabyte",
+        "challenge": "Get 300 kills with Cryo Freeze ammo installed."
+      },
+      {
+        "camoName": "red ring",
+        "challenge": "Get 300 kills with Dead Wire ammo installed."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "grekhova",
+    "type": "Pistol",
+    "challenges": [
+      {
+        "camoName": "hi-fi",
+        "challenge": "Kill 10 Manglers."
+      },
+      {
+        "camoName": "ceres",
+        "challenge": "Get 5 critical kills rapidly 15 times."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "gs45",
+    "type": "Pistol",
+    "challenges": [
+      {
+        "camoName": "velvetvine",
+        "challenge": "Kill 300 zombies."
+      },
+      {
+        "camoName": "siamese",
+        "challenge": "Get 300 hipfire kills."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "stryder .22",
+    "type": "Pistol",
+    "challenges": [
+      {
+        "camoName": "wavy",
+        "challenge": "Get 300 point blank kills."
+      },
+      {
+        "camoName": "condemn",
+        "challenge": "Kill 30 Vermin."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "cigma 28",
+    "type": "Rocket Launcher",
+    "challenges": [
+      {
+        "camoName": "cbrne",
+        "challenge": "Get 300 kills while the weapon is Pack-A-Punched."
+      },
+      {
+        "camoName": "technique",
+        "challenge": "Kill 75 armored zombies."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "he-1",
+    "type": "Rocket Launcher",
+    "challenges": [
+      {
+        "camoName": "decrypt",
+        "challenge": "Kill 30 Vermin."
+      },
+      {
+        "camoName": "demeter",
+        "challenge": "Get 300 kills with Rare rarity or higher."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "sirin 9mm",
+    "type": "Special (secondary)",
+    "challenges": [
+      {
+        "camoName": "starsync",
+        "challenge": "Get 300 Hipfire Kills."
+      },
+      {
+        "camoName": "tempt fate",
+        "challenge": "Get 30 Parasite eliminations."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "knife",
+    "type": "Melee",
+    "challenges": [
+      {
+        "camoName": "dying bloom",
+        "challenge": "Get 300 kills with Brain Rot ammo installed."
+      },
+      {
+        "camoName": "vacation legend",
+        "challenge": "Kill 75 armored zombies."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "baseball bat",
+    "type": "Melee",
+    "challenges": [
+      {
+        "camoName": "banished",
+        "challenge": "Get 300 kills with Rare rarity or higher."
+      },
+      {
+        "camoName": "contort",
+        "challenge": "Kill 30 Vermin."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "power drill",
+    "type": "Melee",
+    "challenges": [
+      {
+        "camoName": "glimmering grove",
+        "challenge": "Get 300 eliminations with the Power Drill at Rare rarity or higher."
+      },
+      {
+        "camoName": "shimmer",
+        "challenge": "Get 10 Mangler eliminations."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "cleaver",
+    "type": "Melee",
+    "challenges": [
+      {
+        "camoName": "tragic tomb",
+        "challenge": "Get 75 Armored Zombie eliminations."
+      },
+      {
+        "camoName": "shock leopard",
+        "challenge": "Get 300 eliminations with the Cleaver at Rare rarity or higher."
       }
     ]
   }

@@ -15,6 +15,7 @@ enum ChallengeType {
 }
 
 type State = {
+  hasBeenVisited: boolean;
   challenges: {
     challenge: string;
     completed: boolean;
@@ -24,6 +25,9 @@ type State = {
 };
 
 type Actions =
+  | {
+      type: "markAsVisited";
+    }
   | {
       type: "complete";
       challenge: string;
@@ -38,8 +42,14 @@ type Actions =
 
 const weaponReducer = (state: State, action: Actions): State => {
   switch (action.type) {
+    case "markAsVisited":
+      return {
+        ...state,
+        hasBeenVisited: true,
+      };
     case "complete":
       return {
+        ...state,
         challenges: state.challenges.map((challenge) =>
           challenge.challenge === action.challenge
             ? { ...challenge, completed: true }
@@ -48,6 +58,7 @@ const weaponReducer = (state: State, action: Actions): State => {
       };
     case "reset":
       return {
+        ...state,
         challenges: state.challenges.map((challenge) =>
           challenge.challenge === action.challenge
             ? { ...challenge, completed: false }
@@ -56,6 +67,7 @@ const weaponReducer = (state: State, action: Actions): State => {
       };
     case "resetAll":
       return {
+        ...state,
         challenges: state.challenges.map((challenge) => ({
           ...challenge,
           completed: false,
@@ -69,15 +81,28 @@ const masteryChallenges = [
     camoName: "Mystic gold",
     challenge: "Get 30 special kills",
   },
+  {
+    camoName: "Opal",
+    challenge: "Get 10 elite kills",
+  },
+  {
+    camoName: "Afterlife",
+    challenge: "Get 20 consecutive kills 10 times without taking damage",
+  },
+  {
+    camoName: "Nebula",
+    challenge: "Kill 10 elite zombies",
+  },
 ];
 
 const getInitialState = (weapon: Weapon): State => {
   const storedState = window.localStorage.getItem(buildKey(weapon.name));
   if (storedState) {
-    return JSON.parse(storedState);
+    return JSON.parse(storedState); // TODO: validate the stored state
   }
 
   return {
+    hasBeenVisited: false,
     challenges: [
       {
         challenge: "Get 2000 critical kills",

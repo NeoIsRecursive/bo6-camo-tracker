@@ -8,16 +8,13 @@ type Props = {
 export const Progression = ({ weapon }: Props) => {
   const w = useWeapon(weapon);
 
-  const grouped = Object.groupBy(w.state.challenges, (c) => c.type);
+  if (!w.state.hasBeenVisited) {
+    return <p>tbd</p>;
+  }
 
-  return (
-    <div>
-      {Object.entries(grouped).map(([type, challenges]) => (
-        <p key={type}>
-          {challenges.filter((c) => c.completed).length}/{challenges.length}{" "}
-          {type} challenges
-        </p>
-      ))}
-    </div>
+  const nextStep = w.state.challenges.find(
+    (challenge) => challenge.completed === false
   );
+
+  return <p>next camo {nextStep?.camoName}</p>;
 };

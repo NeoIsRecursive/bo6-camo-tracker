@@ -12,7 +12,12 @@ const weapons = await getCollection("weapons");
       weapons.map((item) => (
         <li class="inline-flex w-full items-center gap-x-2 text-sm font-medium border first:rounded-t-lg last:rounded-b-lg bg-neutral-900 border-neutral-700 text-white">
           <a class="py-3 px-4 w-full" href={`/weapons/${item.data.name}`}>
-            <span class="text-2xl font-bold">{item.data.name}</span>
+            <p class="grid">
+              <span class="text-xs font-bold text-neutral-500">
+                {item.data.type}
+              </span>
+              <span class="text-2xl font-bold">{item.data.name}</span>
+            </p>
 
             <Progression weapon={item.data} client:only />
           </a>
