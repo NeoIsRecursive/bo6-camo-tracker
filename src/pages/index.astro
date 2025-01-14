@@ -4,25 +4,31 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const weapons = await getCollection("weapons");
+
+const groups = Object.entries(Object.groupBy(weapons, (item) => item.data.type));
 ---
 
 <Layout>
-  <ul class="py-4">
-    {
-      weapons.map((item) => (
-        <li class="inline-flex w-full items-center gap-x-2 text-sm font-medium border first:rounded-t-lg last:rounded-b-lg bg-neutral-900 border-neutral-700 text-white">
-          <a class="py-3 px-4 w-full" href={`/weapons/${item.data.name}`}>
-            <p class="grid">
-              <span class="text-xs font-bold text-neutral-500">
-                {item.data.type}
-              </span>
-              <span class="text-2xl font-bold">{item.data.name}</span>
-            </p>
+  {groups.map(([group, w]) => (
+    <a href={`#${group}`}>
+      <h2 id={group} class="text-2xl font-bold text-neutral-500">{group}s</h2>
+    </a>
+    <ul class="py-4">
+      {w?.map((item) => (
+          <li class="inline-flex w-full items-center gap-x-2 text-sm font-medium border first:rounded-t-lg last:rounded-b-lg bg-neutral-900 border-neutral-700 text-white">
+            <a class="py-3 px-4 w-full" href={`/weapons/${item.data.name}`}>
+              <p class="grid">
+                <span class="text-xs font-bold text-neutral-500">
+                  {item.data.type}
+                </span>
+                <span class="text-2xl font-bold">{item.data.name}</span>
+              </p>
 
-            <Progression weapon={item.data} client:only />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+              <Progression weapon={item.data} client:only />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  ))}
 </Layout>

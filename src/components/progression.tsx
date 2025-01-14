@@ -7,18 +7,14 @@ type Props = {
 
 export const Progression = ({ weapon }: Props) => {
   const w = useWeapon(weapon);
-
-  if (!w.state.hasBeenVisited) {
-    return <p className="text-neutral-500">tbd</p>;
-  }
-
-  const nextStep = w.state.challenges.find(
-    (challenge) => challenge.completed === false
-  );
+  const nextCamo = w.state.hasBeenVisited
+    ? w.state.challenges.find((challenge) => challenge.completed === false)
+        ?.camoName
+    : null;
 
   return (
     <p className="text-neutral-500">
-      next camo <span className="text-white">{nextStep?.camoName}</span>
+      next: <span className="text-white">{nextCamo ?? "tbd"}</span>
     </p>
   );
 };

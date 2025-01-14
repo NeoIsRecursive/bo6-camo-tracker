@@ -221,17 +221,6 @@
     ]
   },
   {
-    "id": 16,
-    "name": "limewave",
-    "type": "SMG",
-    "challenges": [
-      {
-        "camoName": "limewave",
-        "challenge": "Get 300 Point Blank Kills."
-      }
-    ]
-  },
-  {
     "id": 17,
     "name": "marine sp",
     "type": "Shotgun",
@@ -534,7 +523,7 @@
   {
     "id": 37,
     "name": "sirin 9mm",
-    "type": "Special (secondary)",
+    "type": "Special",
     "challenges": [
       {
         "camoName": "starsync",
