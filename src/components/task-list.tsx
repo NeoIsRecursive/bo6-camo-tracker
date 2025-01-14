@@ -1,3 +1,5 @@
+import { List } from "./list";
+
 type Task = {
   challenge: string;
   camoName: string;
@@ -15,12 +17,11 @@ export const TaskList = ({ header, tasks, complete, reset }: Props) => {
   return (
     <div>
       <h2 className="text-2xl font-bold text-white">{header}</h2>
-      <ul className="py-4">
-        {tasks.map((challenge) => (
-          <li
-            className="inline-flex w-full items-center gap-x-2 py-3 px-4 text-sm font-medium border first:rounded-t-lg last:rounded-b-lg bg-neutral-900 border-neutral-700 text-white"
-            key={challenge.challenge}
-          >
+      <List
+        items={tasks}
+        keySelector={(task) => task.challenge}
+        renderItem={(challenge) => (
+          <>
             <input
               id={challenge.challenge}
               name={`completed ${challenge.challenge}`}
@@ -40,9 +41,9 @@ export const TaskList = ({ header, tasks, complete, reset }: Props) => {
               <span className="text-md font-light">{challenge.camoName}:</span>
               <span className="text-lg font-medium">{challenge.challenge}</span>
             </label>
-          </li>
-        ))}
-      </ul>
+          </>
+        )}
+      />
     </div>
   );
 };
